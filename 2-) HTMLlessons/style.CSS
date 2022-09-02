@@ -1,0 +1,18 @@
+body {
+    background-color: black;
+    color: whitesmoke;
+}
+
+p {  color: whitesmoke;
+
+}                                  
+
+h2 {
+    COLOR: red;
+}
+
+
+
+
+
+/*Harici css dosyası ile import ederek sayfanın arka planı yazı renkleri ve boyutları değiştirilebilir (import ederek)*/
