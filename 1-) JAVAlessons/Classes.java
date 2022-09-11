@@ -2,7 +2,7 @@
 public class Classes {
 
 	public static void main(String[] args) {
-		//Nesen tabanlı programlama
+		//Nesen tabanlı programlama.
 		//sınıfAdı objeAdı = new SınıfAdı();
 		
 		HspMknsi makine = new HspMknsi();
