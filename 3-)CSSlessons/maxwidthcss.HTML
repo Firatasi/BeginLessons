@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+                <title>max-width</title>
+        <style>
+            .box1{
+                width: 500px; /*yazıyı çerçeve px deeğerine göre ayarlar*/
+                border: 2px solid lightskyblue;
+                margin: auto;/*sağdan soldan otamatik olarak ortalar*/
+            }
+
+            .box2{
+                border: 2px solid goldenrod;
+                margin: auto;
+                max-width: 500px;/*widthte belli bir yere kadar küçüüldükten sonra gözükmezken max-widthtte küçülmeye devam eder*/
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box1">Lorem Ipsum'un 1500'lerden beri kullanılan standart parçası, ilgilenenler için aşağıda çoğaltılmıştır. Cicero'nun
+            "de Finibus Bonorum et Malorum" dan 1.10.32 ve 1.10.33 numaralı bölümleri de, H. Rackham'ın 1914 çevirisinden
+            İngilizce versiyonlarla birlikte, tam orijinal biçimleriyle çoğaltılmıştır
+        </div>
+       
+        <div class="box2">Lorem Ipsum'un 1500'lerden beri kullanılan standart parçası, ilgilenenler için aşağıda çoğaltılmıştır. Cicero'nun
+            "de Finibus Bonorum et Malorum" dan 1.10.32 ve 1.10.33 numaralı bölümleri de, H. Rackham'ın 1914 çevirisinden
+            İngilizce versiyonlarla birlikte, tam orijinal biçimleriyle çoğaltılmıştır
+        </div>
+    </body>
+</html>
