@@ -168,13 +168,14 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 .colon-2 .ringb{
     position: absolute;
-    top: 13%;
-    left: 56%;
+    top: 2%;
+    left: 47%;
     width: 500px;
     height: 500px;
     background: transparent;
     border: 3px solid #3c3c3c;
     border-radius: 50%;
+    z-index: -1;
 }
 .colon-2 .ringb:before{
     content: "";
