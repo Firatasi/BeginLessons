@@ -70,7 +70,7 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container .row .colon-2 h1{
-    color: #fff;
+    color: rgb(0, 0, 0);
     font-size: 60px;
     line-height: 60px;
     font-weight: bolder;
@@ -79,7 +79,7 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container .row .colon-2 p{
-    color: #fff;
+    color: rgb(195, 255, 0);
     font-size: 15px;
     line-height: 25px;
 }
@@ -88,7 +88,7 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: none;
     color: #fff;
     padding: 10px 25px;
-    background-color: rgb(52, 196, 252);
+    background-color: rgb(0, 0, 0);
     border-radius: 50px;
     margin-top: 45px;
     font-weight: bold;
@@ -97,7 +97,7 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container .row .colon-2 .button:hover{
-    background-color:rgb(5, 149, 206) ; /*butonda gölgelengdirme*/
+    background-color:rgb(195, 255, 0) ; /*butonda gölgelengdirme*/
 }
 
 /*RING-SECTION*/
