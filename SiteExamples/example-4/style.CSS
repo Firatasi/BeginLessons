@@ -39,7 +39,7 @@ header nav {
 
 header nav .logo a {
     color: white;
-    text-decoration: none;
+    text-decoration: none; /* alttaki çizgiyi siler */
     font-weight: 500px;
     font-size: 50px;
 }
@@ -58,12 +58,12 @@ nav ul a {
 nav ul li a:hover {
     color: white;
     text-decoration: none;
-    transition: color .25s ease;
+    transition: color .25s ease;/* butona animasyon ekler */
 }
 
 nav .menu {
     display: flex;
-    align-items: center;
+    align-items: center; /* Bu özellik ise justify-content'in yatay eksende yaptığı şeyleri dikey eksende yapmaya yarar */
     column-gap: 48px;
 }
 
@@ -78,7 +78,7 @@ nav .menu .menu-button {
 nav .menu .menu-button:hover {
     background-color: #0ba2c0;
     color: white;
-    transition: all .25s ease;
+    transition: all .25s ease;/* animasyon ekler */
 }
 /* header end*/
 
