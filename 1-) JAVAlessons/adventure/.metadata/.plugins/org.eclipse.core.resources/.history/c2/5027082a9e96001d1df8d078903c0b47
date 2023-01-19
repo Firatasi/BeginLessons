@@ -3,7 +3,7 @@ package adventure;
 import java.util.Scanner;
 
 public class Player {
-	private int damage, healthy, money, rHealthy;
+	private int damage, healthy, money;
 	private String name, cName;
 	Scanner scan = new Scanner(System.in);
 	private Inventory inv;
@@ -51,7 +51,7 @@ public class Player {
 	}
 
 	private int charMenu() {
-
+		// TODO Auto-generated method stub
 		return 0;
 	}
 
@@ -106,14 +106,5 @@ public class Player {
 	public void setInv(Inventory inv) {
 		this.inv = inv;
 	}
-
-	public int getrHealthy() {
-		return rHealthy;
-	}
-
-	public void setrHealthy(int rHealthy) {
-		this.rHealthy = rHealthy;
-	}
-	
 	
 }
