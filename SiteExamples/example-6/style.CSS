@@ -70,4 +70,38 @@ body {
     background: #ccc;
     left: 0;
     right: 0;
-} 32.26
+} 
+
+.container form .underline:after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: rgb(138, 193, 0);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.3 ease;
+}
+
+.container form .input-box input:focus ~ .underline:after, 
+.container form .input-box input:valid ~ .underline:after {
+    transform:scaleX(1);
+    transform-origin: left;
+
+}
+
+.container form .button {
+margin: 25px 70px;
+width: 300px;
+height: 100px;
+}
+
+.container form .input-box input[type="submit"] {
+    font-size: 17px;
+    color: #fff;
+    border-radius: 45px;
+    cursor: pointer;
+    background: #39c60d;
+}
