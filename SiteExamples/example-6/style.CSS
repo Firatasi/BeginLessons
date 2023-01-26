@@ -103,5 +103,72 @@ height: 100px;
     color: #fff;
     border-radius: 45px;
     cursor: pointer;
-    background: #39c60d;
+    background: #24292e;
+}
+
+.container form .input-box input[type="submit"]:hover {
+letter-spacing: 1px;
+background: rgba(188, 0, 0, 0.856);
+color: #b2dd16;
+font-weight: bold;
+border-radius: 50px;
+transition: all 0.6s ease;
+}
+
+.container .text {
+    font-size: 13px;
+    text-align: center;
+} 
+
+.container .github a,
+.container .twitter a,
+.container .facebook a {
+    display:block;
+    width: 100%;
+    height: 45px;
+    font-size: 15px;
+    text-decoration: none;
+    padding-left: 20px;
+    color: #fff;
+    line-height: 45px;
+    border-radius: 5px;
+}
+
+.container .github {
+    background-color: #24292e;
+    margin: 20px 0 15px 0;
+    border-radius: 45px;
+}
+
+.container .github:hover {
+    background-color: rgba(188, 0, 0, 0.856);
+    border-radius: 50px;
+    font-weight: bold;
+    transition: all 0.1 ease;
+}
+
+.container .twitter {
+    background-color: #24292e;
+    margin: 20px 0 15px 0;
+    border-radius: 45px;
+}
+
+.container .twitter:hover {
+    background-color: rgba(188, 0, 0, 0.856);
+    border-radius: 50px;
+    font-weight: bold;
+    transition: all 0.1 ease;
+}
+
+.container .facebook {
+    background-color: #24292e;
+    margin: 20px 0 15px 0;
+    border-radius: 45px;
+}
+
+.container .facebook:hover {
+    background-color: rgba(188, 0, 0, 0.856);
+    border-radius: 50px;
+    font-weight: bold;
+    transition: all 0.1 ease;
 }
