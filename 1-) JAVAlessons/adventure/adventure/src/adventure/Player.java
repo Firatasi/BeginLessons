@@ -13,6 +13,10 @@ public class Player {
 		this.name = name;
 		this.inv = new Inventory();
 	}
+	public int getTotalDamage() {
+	return this.getDamage() + this.getInv().getDamage();
+	
+	}
 	
 	public void selectCha() {
 		switch(charMenu()) {
