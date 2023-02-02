@@ -1,16 +1,16 @@
 package adventure;
 
 public abstract class BattleLoc extends Location {
-	Monster mns;
-	BattleLoc(Player player, String name,Monster mns) {
+	protected Obstacle obstacle;
+	BattleLoc(Player player, String name, Obstacle obstacle) {
 		super(player);
-		this.mns = mns;
+		this.obstacle = obstacle;
 		this.name = name;
 	}
+	
 	public boolean getLocation() {
-		player.setHealthy(player.getrHealthy());
-		System.out.println("Renewed Health");
-		System.out.println("You are in the safe house now");
+		int obsCount = obstacle.count();
+		
 		return true;
 	}
 }
