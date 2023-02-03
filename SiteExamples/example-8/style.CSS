@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;/*listenın altındaki cizgiyi siler*/
+    box-sizing: border-box;
+    list-style: none; /*listenin basındakı noktaları siler*/
+}
+
+body {
+    background-color: seashell;
+}
+
+.container .sidebar {
+    position: absolute;
+    top: 50px;
+    
+}
