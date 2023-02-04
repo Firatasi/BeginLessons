@@ -10,10 +10,6 @@ public abstract class BattleLoc extends Location {
 	
 	public boolean getLocation() {
 		int obsCount = obstacle.count();
-		System.out.println("You are here now" + this.getName());
-		System.out.println("Be careful! Here" + obsCount + "unit" + obstacle.getName() + "Two vampires live here!");
-		System.out.println("<W>ar or <E>scape" );
-		String selCase = scan.next();
 		
 		return true;
 	}
