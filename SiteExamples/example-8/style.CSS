@@ -11,7 +11,44 @@ body {
 }
 
 .container .sidebar {
-    position: absolute;
-    top: 50px;
-    
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background-color: burlywood;
+    padding: 55px;
+}
+
+.container .sidebar h1 {
+    color: #149de6;
+    font-size: 40px;
+    cursor: pointer;   /*imleç ustune geldıgınde tıklanabılır yapar*/
+}
+
+.container .sidebar span {
+    color: #0bf17e;
+    text-align: center;
+}
+
+.container .sidebar h1:hover {
+    color: #0bf17e;
+    transition: all 0.6s;
+}
+
+.container .sidebar span:hover {
+    color: #149de6;
+    transition: all 0.6s;
+}
+
+.container .sidebar ul {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.container .sidebar ul li a {
+    color: #fff;
+}
+
+.container .sidebar ul li {
+    padding: 33px; /*etiketler arası boslugu ayarlar*/
+    border-bottom: 1px solid rgb(255, 0, 0); /*li arasına çizgilerir verir*/
 }
