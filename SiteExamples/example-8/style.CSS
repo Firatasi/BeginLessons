@@ -7,15 +7,17 @@
 }
 
 body {
-    background-color: seashell;
+ background: url(background.webp) no-repeat center fixed;
+ background-size: cover; /*arkaplanı sıgdırır*/
 }
 
 .container .sidebar {
     position: fixed;
     width: 300px;
     height: 100%;
-    background-color: burlywood;
+    background-color: rgb(0, 0, 0);
     padding: 55px;
+    border-radius: 50px;
 }
 
 .container .sidebar h1 {
@@ -51,4 +53,34 @@ body {
 .container .sidebar ul li {
     padding: 33px; /*etiketler arası boslugu ayarlar*/
     border-bottom: 1px solid rgb(255, 0, 0); /*li arasına çizgilerir verir*/
+}
+
+.container .sidebar ul li:hover {
+    background-color: #0bf17e;
+    cursor: pointer;
+    transition: all 0.9s;
+    border-radius: 10px;
+} 
+
+.container .social-media {
+position: absolute;
+top: 743px;
+left: 85px; 
+display: flex;
+}
+
+.container .social-media a {
+display: block;
+width: 40px;
+height: 30px;
+line-height: 30px;
+text-align: center;
+margin: 2px;
+color: #2595e0;
+font-size: 25px;
+}
+
+.container .social-media a:hover {
+    color: #74e107;
+    transition: all 0.6s;
 }
