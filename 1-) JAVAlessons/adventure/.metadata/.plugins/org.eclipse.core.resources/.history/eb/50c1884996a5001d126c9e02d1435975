@@ -13,7 +13,7 @@ public abstract class BattleLoc extends Location {
 		System.out.println("You are here now" + this.getName());
 		System.out.println("Be careful! Here" + obsCount + "unit" + obstacle.getName() + "Two vampires live here!");
 		System.out.println("<W>ar or <E>scape" );
-		String selCase = scan.nextLine();
+		String selCase = scan.next();
 		selCase = selCase.toUpperCase();
 		if(selCase.equals("s")) {
 			if (combat(obsCount)) {
@@ -31,16 +31,6 @@ public abstract class BattleLoc extends Location {
 		for (int i=0; i<obsCount; i++) {
 			playerStats();
 			enemyStats();
-			while(player.getHealthy() > 0 && obstacle.getHealth() > 0) {
-				System.out.println("<H>it or <E>scape");
-				String selCase = scan.nextLine();
-				selCase = selCase.toUpperCase();
-				if (selCase.equals("H")) {
-					System.out.println("Your hit!");
-					obstacle.setHealth(obstacle.getHealth() - player.getTotalDamage());
-					System.out.println("Player health: " + player.getHealthy());
-				}
-			}
 		}
 		return true;
 	
