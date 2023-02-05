@@ -84,3 +84,13 @@ font-size: 25px;
     color: #74e107;
     transition: all 0.6s;
 }
+
+.container .main-content {
+    margin-left: 320px;
+}
+
+.container .main-content .header {
+    padding: 30px;
+    font-size: 50px;
+    color: red;
+}
