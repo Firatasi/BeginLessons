@@ -38,16 +38,7 @@ public abstract class BattleLoc extends Location {
 				if (selCase.equals("H")) {
 					System.out.println("Your hit!");
 					obstacle.setHealth(obstacle.getHealth() - player.getTotalDamage());
-					afterHit();
 					System.out.println("Player health: " + player.getHealthy());
-					System.out.println(obstacle.getName() + "Health: " + obstacle.getHealth());
-					System.out.println();
-					System.out.println("Enemy hit you!");
-					player.setHealthy(player.getHealthy() - (obstacle.getDamage() - player.getInv().getArmor()));
-					afterHit();
-					
-				}else {
-					break;
 				}
 			}
 		}
@@ -69,7 +60,7 @@ public abstract class BattleLoc extends Location {
 	}
 	
 	public void enemyStats() {
-		System.out.println(obstacle.getName() + "Values\n----------");
+		System.out.println(obstacle.getNName() + "Values\n----------");
 		System.out.println("Health: " + obstacle.getHealth());
 		System.out.println("Damage: " + obstacle.getDamage());
 		System.out.println("Award: " + obstacle.getAward());
