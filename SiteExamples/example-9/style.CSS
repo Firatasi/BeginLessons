@@ -1,6 +1,8 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
+    text-decoration: none;
 }
 
 img {
@@ -8,4 +10,24 @@ img {
     border-radius: 50%;
     border-style: double;
     color: red;
+}
+
+body {
+    height: 100vh;
+    background: url(bckground.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center; /*Yatay ortalar*/
+    align-items: center; /*Dikey ortalar*/
+}
+
+.profile-card {
+    width: 400px;
+    text-align: center;
+}
+
+.card-header {
+    background-color: #2c3a47;
+    border-radius: 50px;
 }
