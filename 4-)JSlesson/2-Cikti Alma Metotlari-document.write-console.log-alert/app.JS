@@ -1,6 +1,6 @@
 //!1.yontem
 //Document write ile cikti verme
-//?document.write("Hello World! <br>")  // !br bir sonraki ifadeyi alt satıra yazar
+//?document.write("Hello World! <br>")  // br bir sonraki ifadeyi alt satıra yazar
 //?document.write("I am Firat")
 //?document.write(true)
 
