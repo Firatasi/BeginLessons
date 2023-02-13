@@ -6,7 +6,7 @@
   === (hem tipleri hemde değerlerinin esit olup olmadıgına bakar)
   += (direk toplar)
   *= (direk carpar)
-  /= (birek boler)
+  /= (direk boler)
   %= (direk modunu oalır)
   **= (direk karesini alır)
 
