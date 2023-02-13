@@ -1,0 +1,54 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #f3f3f3;
+}
+
+.header {
+    height: 100px;
+    background: #1da1f2;
+    padding: 15px;
+    color: #fff;
+}
+
+.logo {
+    line-height: 100px;
+    float: left; /*logoyu sola sabitler*/
+    cursor: pointer;/*imleci tiklanir hale getirir*/
+}
+
+.menu {
+    float: right;/*menuyu sag tarafa hizalar*/
+    line-height: 100px;
+}
+
+.menu a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;/*alttaki çizgileri kaldirir*/
+    padding: 10px;
+    transition: 0.7s;
+}
+
+.show-menu-btn, .hide-menu-btn {
+    transition: 0.7s;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.show-menu-btn {
+    float: right;
+}
+
+.show-menu-btn i {
+    line-height: 100%;
+    padding: 30px;
+}
+
+
+
