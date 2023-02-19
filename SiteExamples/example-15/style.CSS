@@ -13,6 +13,17 @@ html {
     scroll-behavior: smooth;
 }
 
+html::-webkit-scrollbar {
+    width: 0.8rem;
+    background-color: var(--black-color);
+}
+
+html::-webkit-scrollbar-thumb {
+    border-radius: 3rem;
+    background-color: #fff;
+}
+
+
 * {
     font-family: "Poppins", sans-serif;
     margin: 0px;
@@ -42,6 +53,10 @@ section {
     color: #fff;
     background-color: var(--black-color);
     cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.9;
 }
 
 .heading {
