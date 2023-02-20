@@ -23,7 +23,6 @@ html::-webkit-scrollbar-thumb {
     background-color: #fff;
 }
 
-
 * {
     font-family: "Poppins", sans-serif;
     margin: 0px;
@@ -42,6 +41,11 @@ body {
 
 section {
     padding: 3.5rem 7%;
+}
+
+a {
+    color: var(--black-color);
+    text-decoration: none;
 }
 
 .btn {
@@ -186,3 +190,55 @@ section {
 
 
 /*! MENU END */
+
+/*! products section start*/
+.products .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+}
+
+.products .box-container .box {
+    text-align: center;
+    background-color: #fff;
+    position: relative;
+    height: 60rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3rem;
+}
+
+.products .box-container .box-head {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    z-index: 10;
+}
+
+.products .box-container .box-head .title{
+    font-size: 1.4rem;
+}
+
+.products .box-container .box-head .name{
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: start;
+    overflow-wrap: anywhere;
+}
+
+.products .box-container img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    
+}
+
+
+
+
+/*! products section end*/
+
