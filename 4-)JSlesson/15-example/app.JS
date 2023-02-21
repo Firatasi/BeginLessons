@@ -1,9 +1,9 @@
 //-------BEDEN KİTLE ENDEKSİ HESAPLAMA--------
 
-let kilo = Number prompt("Kilonuzu KG Cinsinden Griniz: ");
-let boy = Number prompt("Boyunuzu Metre Cinsinden Giriniz(örn:175): ");
+let kilo = Number(prompt("Kilonuzu KG Cinsinden Griniz: "));
+let boy = Number(prompt("Boyunuzu Metre Cinsinden Giriniz(örn:175): "));
 
-let endeks = (kilo/boy**2);
+let endeks = (kilo/(boy**2));
 
 if(endeks<=18.5) {
     console.log("İdeal Kilonun Altındasınız! ");
