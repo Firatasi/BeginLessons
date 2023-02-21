@@ -160,6 +160,8 @@ a {
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
+    background-color: #34a3cf;
+    border-radius: 3rem;
 }
 
 .menu .box-container .box img {
@@ -195,12 +197,14 @@ a {
 .products .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
 }
 
 .products .box-container .box {
     text-align: center;
-    background-color: #fff;
+    background-color: #34a3cf;
     position: relative;
+    border-radius: 3rem;
     height: 60rem;
     display: flex;
     flex-direction: column;
@@ -237,8 +241,78 @@ a {
     
 }
 
+.products .box-container .box-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
 
+.products .box-container .box-bottom .info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 
+.products .box-container .box-bottom .info .price {
+    font-size: 3rem;
+}
+
+.products .box-container .box-bottom .info .amount {
+    font-size: 1.4rem;
+}
+
+.products .box-container .box-bottom .product-btn a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 6.5rem;
+    height: 6.5rem;
+    border: 0.2rem solid var(--main-color);
+}
+
+.products .box-container .box-bottom .product-btn a i {
+    font-size: 1.6rem;
+    color: var(--main-color);
+}
 
 /*! products section end*/
+
+/*!about us start*/
+.about .row {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    font-size: 20px;
+}
+
+.about .row .image {
+    flex: 1 1 45rem;
+    
+}
+
+.about .row img {
+    width: 100%;
+}
+
+.about .row .content {
+    flex: 1 1 45rem;
+}
+
+.about .row .content h3 {
+    font-size: 3rem;
+    color: #fff;
+}
+
+.about .row .content p {
+    font-size: 1.6rem;
+    color: #fff;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+
+/*!about us end*/
 
