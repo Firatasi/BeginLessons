@@ -8,7 +8,7 @@ function atakYap() {
     var atakYap = "Herkese Atak"; //function scope -- ram bellekte cok yer kaplar
     if(true) {
         var b=6;
-        console.log(b)//! block scope olmasına ragmen var ile tanimlandigi icin funtion scope gibi davranır  
+        console.log(b)//! block scope olmasına ragmen var ile tanimlandigi icin function scope gibi davranır  
     }
     console.log(atakYap);
 }

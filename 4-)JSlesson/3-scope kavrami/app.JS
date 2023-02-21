@@ -35,7 +35,7 @@
 !method1();
 */
 
-function metho2() {
+function method2() {
     var a=5; //*function scope
    
     if(true) {
