@@ -8,7 +8,7 @@
 / (bölme operatörü)
 % (mod alma operatörüdür, bir sayiyi bir sayiya böldüğünde kalanı vermesi için kullanılır)
 ++ (sayiyi 1 arttırır)
--- (sayiyi 1 arttırı)
+-- (sayiyi 1 azaltır)
 ** (sayinin üssünü almak icin kullanilir)
 
 //? degiskenler ıkı kalıptan olusuyorsa 2. kalıp buyuk harfle baslar siraNo gibi
