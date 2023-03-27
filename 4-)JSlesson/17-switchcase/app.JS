@@ -20,7 +20,7 @@
 let sayi = prompt("Lütfen 1 ile 5 arasında bir sayı giriniz: ");
 
 switch(sayi) {
-    case "1": //dtring aldığımız için prompttan case "" seklinde veririz
+    case "1": //string aldığımız için prompttan case "" seklinde veririz
         console.log("Girilern sayı 1 ");
     break;
 
