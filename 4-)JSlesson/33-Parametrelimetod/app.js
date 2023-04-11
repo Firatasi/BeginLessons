@@ -19,13 +19,19 @@ sayi(9);
 
 //metodlar kodu bir kere yazıp birden fazla yerde ihtiyaca gore kullanılması ıcın tasaarlanmıstır
 
+//!
 
 let yas = Number(prompt("Yaşınızı Giriniz: "));
 
-function denetim() {
+denetim(yas);
+
+function denetim(Age) {
     if(yas>=18) {
         alert("Ehliyet Alabilirsiniz.");
     }else {
         alert("18 Yaşından Küçük Olduğunuz İçin Ehliyet Alamazsınız.")
     }
 }
+
+//!
+
