@@ -27,9 +27,9 @@ let sayi2 = 2;
 console.log(sayi1+sayi2); //sayı biri string olarak algılar ve 52 olarak yazar
 
 let o = 10;
-a++;//11
-a++;//12
-a--;//11
+o++;//11
+o++;//12
+o--;//11
 console.log(o);
 
 console.log(4**2);//(4**2) -> 4^2=16
