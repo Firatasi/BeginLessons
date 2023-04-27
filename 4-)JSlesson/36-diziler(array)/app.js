@@ -13,7 +13,7 @@ console.log(numbers); //indexler
 
 
 
-let names = ["Fırat", "Yusuf", "Eda", "Rece"]
+let names = ["Fırat", "Yusuf", "Eda", "Recep"]
 names [2] = "Malik";
 console.log(names[2]);
 
