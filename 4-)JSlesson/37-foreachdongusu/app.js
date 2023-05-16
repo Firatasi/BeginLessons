@@ -5,7 +5,7 @@ let dizi2= new Array();  //her ikiside dizi oluşturur
 
 
 dizi1[0] = "Kemal";
-dizi1[1] = "Sam"
+dizi1[1] = "Sam";
 
 
 

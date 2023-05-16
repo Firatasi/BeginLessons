@@ -81,5 +81,5 @@ let index = cars.indexOf("bmw");
 console.log(index);
 
 //!icloudes metot
-let answer = cars.includes("opel"); //arrayin iinde böyle bir eleman varsa true yoksa false döner
+let answer = cars.includes("opel"); //arrayin içinde böyle bir eleman varsa true yoksa false döner
 console.log(answer);

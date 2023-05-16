@@ -17,7 +17,7 @@ function cube(sayi) {
 sayi(2);
 sayi(9);
 
-//metodlar kodu bir kere yazıp birden fazla yerde ihtiyaca gore kullanılması ıcın tasaarlanmıstır
+//metodlar kodu bir kere yazıp birden fazla yerde ihtiyaca gore kullanılması ıcın tasarlanmıstır
 
 //!
 

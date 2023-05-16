@@ -4,7 +4,7 @@ let metin = "Javascript ogrenmeye calisiyorum"
 let harf = prompt("Harfi giriniz.");
 
 let sonuc = bul(harf);
-alert("Hatf Sayısı : " + sonuc );
+alert("Harf Sayısı : " + sonuc );
 
 function bul(harf) {
     let toplam = 0;

@@ -56,12 +56,47 @@ function shelfMake () {
     let line = "" ;
     for (let i=0; i<shelfs.length; i++) {
         for (let j=0; j<5; j++) {
-            line += "|" +( shelfs[i][j].show ? shelfs[i][j].code: "****" )+ "|" ;
+            line += "|" +( shelfs[i][j].show ? shelfs[i][j].code: "****" )+ "" ;
         }
         console.log(line);
+        console.log("************************");
         line = "";
     }
 }
 
+function codeFind(bookName) {
+    let shelfCode = null;
+    books.forEach(function(book) {
+        if(book.name.toUpperCase().includes(bookName.toUpperCase(),0)) {
+            shelfCode = book.shelf;
+        }
+        return shelfCode;
+    });
+
+    return null;
+}
+
 shelfMake();
+
+let bookName = prompt("Lütfen bir kitap ismi giriniz.");
+let shelfcode = codeFind(bookName);
+
+
+if(shelfCode != null) {
+    shelfShow(shelfCode);
+    shelfMake();
+}else {
+    alert("Girdiğiniz kitap kütüphanemizde bulunmamaktadır");
+}
+
+function shelfShow(shelfCode) {
+    for(let i = 0; i<shelfs.length; i++) {
+        for(let j = 0; j<5; j++) {
+            if(shelfs[i][j].code==shelfCode) {
+                shelfs[i][j].show=true;
+                break;
+            }
+        }
+    }
+}
 
