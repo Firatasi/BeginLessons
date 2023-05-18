@@ -1,5 +1,5 @@
 //Dinamik olarak eleent oluşturmak
-const cardBody = document.querySelectorAll(".card-body") [1];
+// const cardBody = document.querySelectorAll(".card-body") [1];
 
 
 const link = document.createElement("a");
@@ -25,3 +25,12 @@ todos[1].remove();
 console.log(todo);
 
 //!Element Yer değiştirme
+
+
+const cardBody = document.querySelectorAll(".card-body")[1];
+
+const newTitle = document.createElement("h2");
+newTitle.textContent = "Todo List - new";
+
+
+cardBody.replaceChild(newTitle, cardBody.childNodes[1]);
