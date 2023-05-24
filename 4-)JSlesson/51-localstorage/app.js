@@ -11,3 +11,7 @@ console.log(value);
 
 //Değer Silmek
 localStorage.removeItem(ders4);
+
+//hepsinisilmek
+localStorage.clear();
+
