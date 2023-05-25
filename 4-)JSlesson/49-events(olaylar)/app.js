@@ -21,78 +21,78 @@ function changeTitle() {
 //mousedown       **
 
 
-// document.addEventListener("DOMContentLoaded",run); //Event atama şekli addevenlistener()-2 sayfa yüklendiğinde run fonksiyonunun çalışmasını sağlar.
+document.addEventListener("DOMContentLoaded",run); //Event atama şekli addevenlistener()-2 sayfa yüklendiğinde run fonksiyonunun çalışmasını sağlar.
 
-// function run() {
-//     alert("Page");
-// }
-
-
-// const cardTitle = document.querySelectorAll(".card-title")[1];
-// const cardBody = document.querySelectorAll(".card-body")[1];
-
-// cardTitle.addEventListener("cick", runa);
-
-// function runa(e) {
-//     console.log(e.type);
-// }
+function run() {
+    alert("Page");
+}
 
 
-// document.addEventListener("dbclick",runc); 
+const cardTitle = document.querySelectorAll(".card-title")[1];
+const cardBody = document.querySelectorAll(".card-body")[1];
 
-// function runc(e) {
-//     alert(e.type);
-// }
+cardTitle.addEventListener("cick", runa);
 
-// document.addEventListener("mouseover",rund); 
-
-// function rund(e) {
-//     console.log(e.type);
-// }
-
-// document.addEventListener("mouseout",rune); 
-
-// function rune(e) {
-//     console.log(e.type);
-// }
-
-// document.addEventListener("mouseenter",rund); 
-
-// function rund(e) {
-//     console.log(e.type);
-// }
+function runa(e) {
+    console.log(e.type);
+}
 
 
-//Klavye Eventleri
+document.addEventListener("dbclick",runc); 
 
-//keypress  harf ve sayılarda tetiklenen event türüdür
+function runc(e) {
+    alert(e.type);
+}
 
-//keydown   harf,sayı ve klavyedeki diğer tuşlarıyle çalışanevent türüdür.
+document.addEventListener("mouseover",rund); 
 
-//keyup     klavyeden basılan tusa basmayı bıraktıgımızda çalısır
+function rund(e) {
+    console.log(e.type);
+}
+
+document.addEventListener("mouseout",rune); 
+
+function rune(e) {
+    console.log(e.type);
+}
+
+document.addEventListener("mouseenter",rund); 
+
+function rund(e) {
+    console.log(e.type);
+}
+
+
+// Klavye Eventleri
+
+// keypress  harf ve sayılarda tetiklenen event türüdür
+
+// keydown   harf,sayı ve klavyedeki diğer tuşlarıyle çalışanevent türüdür.
+
+// keyup     klavyeden basılan tusa basmayı bıraktıgımızda çalısır
 
 
 
-// document.addEventListener("keypress",runx);
+document.addEventListener("keypress",runx);
 
-// function runx(e) {
-//     console.log(e.type);
-//     //console.loog(e.key);
-//     //console.loog(e.keyCode);
-//     //console.loog(e.keywhich);
-// }
+function runx(e) {
+    console.log(e.type);
+    //console.loog(e.key);
+    //console.loog(e.keyCode);
+    //console.loog(e.keywhich);
+}
 
-// document.addEventListener("keydown",runy);
+document.addEventListener("keydown",runy);
 
-// function runy(e) {
-//     console.log(e.type);
-// }
+function runy(e) {
+    console.log(e.type);
+}
 
-// document.addEventListener("keyup",runz);
+document.addEventListener("keyup",runz);
 
-// function runz(e) {
-//     console.log(e.type);
-// }
+function runz(e) {
+    console.log(e.type);
+}
 
 //!İNPUT EVENTLERİ
 
