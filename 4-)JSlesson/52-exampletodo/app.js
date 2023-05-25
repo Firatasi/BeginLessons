@@ -21,7 +21,7 @@ function addTodo(e) {
         //arayüze ekleme
         addTodoToUI(inputText);
     }
-    e.preventDefault();
+    e.preventDefault();//farklı bir sayfaya gitmeyi engelledik
 }
 
 function addTodoToUI(newTodo) {
@@ -39,7 +39,9 @@ function addTodoToUI(newTodo) {
     const i = document.createElement("i");
     i.className = "fa fa-remove"; 
 
-    a.appendChild(i);
-    li.appendChild(a);
-    todoList.appendChild(li);
+    a.appendChild(i);//i anın içine girer.
+    li.appendChild(a);//a li nin içine girer.
+    todoList.appendChild(li);//li todolistin içine girer.
+
+    addInput.value = "";
 }
