@@ -3,7 +3,7 @@
 const form = document.querySelector("#todoAddForm");
 const addInput = document.querySelector("#todoName");
 const todoList = document.querySelector(".list-group");
-const firstCardBody = document.querySelectorAll(".list-group")[0];
+const firstCardBody = document.querySelectorAll(".card-body")[0];
 const secondCardBody = document.querySelectorAll(".list-group")[1];
 const clearButton = document.querySelectorAll("#clearButton");
 
@@ -13,16 +13,26 @@ runEvents();
 
 function runEvents() {
     form.addEventListener("submit", addTodo);
+    document.addEventListener("DOMContentLoaded", pageLoaded)
+}
+function pageLoaded() {
+    checekTodosFromStorage();
+    todos.forEach(function(todo) {
+        console.log(todo);
+        addTodoToUI(todo);
+    }); 
+
 }
 
 function addTodo(e) {
     const inputText = addInput.value.trim();
     if(inputText == null || inputText == "") {
-        alert("Lütfen bir değer giriniz! ");
+        showAlert("warning", "Please enter a value! ")
     }else {
         //arayüze ekleme
         addTodoToUI(inputText);
         addTodoToStorage(inputText);
+        showAlert("success", "Todo add.");
     }
 
     //storage ekleme
@@ -66,3 +76,18 @@ function checekTodosFromStorage() {
         todos = JSON.parse(localStorage.getItem("todos"));
     }
 }
+
+function showAlert(type, message) {
+
+const div = document.createElement("div");
+div.className = `alert alert-${type}`
+div.textContent = message;
+
+firstCardBody.appendChild(div);
+
+setTimeout(function() {
+    div.remove()
+}, 1500);//1,5sn 
+
+}
+showAlert("success", "Todo add");
