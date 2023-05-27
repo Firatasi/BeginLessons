@@ -15,7 +15,11 @@ function runEvents() {
     form.addEventListener("submit", addTodo);
     document.addEventListener("DOMContentLoaded", pageLoaded)
     secondCardBody.addEventListener("click", removeTodoToUI);
+    clearButton.addEventListener("click", allTodosEverywhere);
+
 }
+
+
 function pageLoaded() {
     checekTodosFromStorage();
     todos.forEach(function(todo) {
@@ -25,11 +29,38 @@ function pageLoaded() {
 
 }
 
+function allTodosEverywhere() {
+    const todoLists = document.querySelectorAll(".list-group-item"); 
+    if(todoLists.length > 0) {
+        todoLists.forEach(function(todo) {
+            todo.remove();
+        });
+        todos = [];
+        localStorage.setItem("todos", JSON.stringify(todos));
+        showAlert("success", "Deleted!");
+    }else {
+        showAlert("warning", "There must be at least one todo to delete.");
+    }
+    console.log(todoLists);
+}
+
 function removeTodoToUI(e) {
     if(e.target.className === "fa fa-remove") {
         const todo = e.target.parentElement.parentElement;
         todo.remove();
+
+        removeTodoToStorage(todo.textContent);
     }
+}
+
+function removeTodoToStorage(removeTodo) {
+    checekTodosFromStorage();
+    todos.forEach(function(todo, index) {
+        if (removeTodo === todo) {
+            todos.splice(index, 1);
+        }
+    });
+    localStorage.setItem("todos", JSON.stringify(todos));
 }
 
 function addTodo(e) {
