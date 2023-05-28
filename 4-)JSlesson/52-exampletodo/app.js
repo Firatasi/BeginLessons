@@ -31,7 +31,18 @@ function pageLoaded() {
 }
 
 function filter(e) {
-    
+    const filterValue = e.target.value.toLowerCase().trim();
+    const todoLists = document.querySelectorAll(".list-group-item");
+
+    if(todoLists.length > 0) {
+        if(todos.textContent.toLowerCase().trim().icludes(filterValue)) {
+            todos.setAttribute("style","display : block");
+        }else {
+            todos.setAttribute("style", "display : none");
+        }
+    }else {
+        showAlert("warning", "Filter warning!")
+    }
 }
 
 function allTodosEverywhere() {
