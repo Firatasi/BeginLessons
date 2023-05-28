@@ -6,6 +6,7 @@ const todoList = document.querySelector(".list-group");
 const firstCardBody = document.querySelectorAll(".card-body")[0];
 const secondCardBody = document.querySelectorAll(".list-group")[1];
 const clearButton = document.querySelectorAll("#clearButton");
+const filterInput = document.querySelectorAll("#todoSearch");
 
 let todos = [];
 
@@ -16,7 +17,7 @@ function runEvents() {
     document.addEventListener("DOMContentLoaded", pageLoaded)
     secondCardBody.addEventListener("click", removeTodoToUI);
     clearButton.addEventListener("click", allTodosEverywhere);
-
+    filterInput.addEventListener("keyup", filter);
 }
 
 
@@ -27,6 +28,10 @@ function pageLoaded() {
         addTodoToUI(todo);
     }); 
 
+}
+
+function filter(e) {
+    
 }
 
 function allTodosEverywhere() {
