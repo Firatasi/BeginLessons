@@ -28,4 +28,3 @@ const kupAl = x =>  x*x*x;
 console.log("Değer", kupAl(75));
 
 
-
