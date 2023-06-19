@@ -1,1 +1,0 @@
-document.getElementById("Jstest").innerHTML = "www.google.com";

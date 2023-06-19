@@ -1,3 +1,0 @@
-do {
-//kodlar
-}while(d);

@@ -1,4 +1,0 @@
-INDEX VERSION 1.131+C:\Users\FIRAT\Desktop\Begin\.metadata\.plugins\org.eclipse.jdt.core
-1865797976.index
-3145416337.index
-1840488245.index
