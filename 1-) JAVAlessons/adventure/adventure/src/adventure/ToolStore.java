@@ -1,0 +1,83 @@
+package adventure;
+
+public class ToolStore extends NormalLoc {
+
+	ToolStore(Player player) {
+		super(player, "Shop");
+		
+	}
+	
+	public boolean getLocation() {
+		System.out.println("Money: " + player.getMoney());
+		System.out.println("1- Guns");
+		System.out.println("2- Armors");
+		System.out.println("3- Exit");
+		System.out.println("Your choose: ");
+		int selTool = scan.nextInt();
+		int selIttemID;
+		switch(selTool ) {
+		case 1:
+			selItemID = weaponMenu();
+			buyWeapon(selItemID);
+			break;
+			
+		case 2:
+			break;
+		
+		default:
+			break;
+		}
+		return true;
+	}
+	
+	public void weaponMenu() {
+		System.out.println("1- Gun <Money: 25 ** Damage: 2>"); 
+		System.out.println("2- Sword <Money: 35 ** Damage: 3>");
+		System.out.println("3- Rifle <Money: 45 ** Damage: 7>");
+		System.out.println("Choose a Weapon: ");
+		int selWeapon = scan.nextInt();
+		return selWeaponID;
+	}
+	
+	public void buyWeapon(int itemID) {
+		int damage = 0, price = 0;
+		String wName = null;
+		if(itemID > 0 || itemID < 4) {
+		
+			switch(itemID) {
+			
+			case 1:
+				damage = 2;
+				wName = "Gun";
+				price = 25;
+				break;
+				
+			case 2:
+				damage = 3;
+				wName = "Sword";
+				price = 35;
+				break;
+				
+			case 3:
+				damage = 7;
+				wName = "Rifle";
+				price = 45;
+				break;
+			}
+			
+			if(price >0) {
+				if(player.getMoney() > price) {
+					player.getInv().setDamage(damage);
+					player.getInv().setwName(wName);
+					player.setMoney(player.getMoney() - price);
+					System.out.println(wName + "You bought, before damage: " + player.getDamage()  + player.getTotalDamage());
+					System.out.println("Remaining money: " + player.getMoney());
+				}
+				
+			}
+		}else {
+			System.out.println("Invalid Transaction");
+		}
+	}
+
+}
