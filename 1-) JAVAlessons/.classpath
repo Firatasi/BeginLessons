@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="AccesModifiers/|campspring/rentACar/src/main/java/|adventure/adventure/src/|campspring/rentACar/src/test/java/|Begin/OOPTemelleri/src/" kind="src" path=""/>
+	<classpathentry kind="src" path="AccesModifiers"/>
+	<classpathentry kind="src" path="adventure/adventure/src"/>
+	<classpathentry kind="src" path="Begin/OOPTemelleri/src"/>
+	<classpathentry kind="src" path="campspring/rentACar/src/main/java"/>
+	<classpathentry kind="src" path="campspring/rentACar/src/test/java"/>
+	<classpathentry kind="output" path="Begin/OOPTemelleri/bin"/>
+</classpath>
