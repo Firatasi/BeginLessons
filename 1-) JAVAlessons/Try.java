@@ -2,15 +2,17 @@
 public class Try {
 
 	public static void main(String[] args) {
-		int a = 0;
+		int x = 0;
+		int y = 5;
+
 		try {
-			a = 2/0;
-		}catch(ArithmeticException e) {
-			System.out.println(e.getMessage());
-			
+			System.out.println("Bölme işlemi: ");
+			System.out.println(y/x);
+			System.out.println("Bölme işlemi bitti: ");
+		}catch (Exception e) {
+			System.out.println("Hata yakalandı! ");
 		}
-		
-		System.out.println(a);
-		System.out.println("Programs start! ");
+		System.out.println("program bitti! ");
+
 	}
 }
