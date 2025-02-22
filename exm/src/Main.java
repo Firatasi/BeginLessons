@@ -1,4 +1,6 @@
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.HashSet;
 import java.util.Iterator;
@@ -6,7 +8,7 @@ import java.util.LinkedHashSet;
 import java.util.TreeSet;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException {
 
 
         TreeSet<Integer> numbers = new TreeSet<>();
@@ -45,6 +47,18 @@ public class Main {
             }
         }catch (IOException e) {
 
+        }
+
+        try {
+            FileInputStream input = new FileInputStream(dosya);
+            //System.out.println(input.read()); //ilk elemanın byte değerini döner
+            int i = input.read();
+            while (i != -1) {
+                System.out.print((char) i);
+                i = input.read();//chara dönüştürerek veriyi yazar
+            }
+        }catch (Exception e) {
+            System.out.println(e.getMessage());
         }
 
     }
