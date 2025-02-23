@@ -2,14 +2,17 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.HashSet;
-import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.TreeSet;
+import java.io.FileOutputStream;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
 
+
+        SerialTest();
 
         TreeSet<Integer> numbers = new TreeSet<>();
         numbers.add(10);
@@ -61,6 +64,32 @@ public class Main {
             System.out.println(e.getMessage());
         }
 
+
+
+
+
+
+    }
+    public static void SerialTest() {
+        try {
+            Car car = new Car("Hyundai", "Getz");
+            FileOutputStream file = new FileOutputStream("output.txt");
+            ObjectOutputStream write = new ObjectOutputStream(file);        write.writeObject(car);
+
+
+            FileInputStream fileIn = new FileInputStream("output.txt");
+            ObjectInputStream read = new ObjectInputStream(fileIn);
+// Reads the objects
+            Car newCar = (Car) read.readObject();
+
+            System.out.println("Car Brand : " + newCar.getBrand());
+            System.out.println("Car Model: " + newCar.getModel());
+            read.close();
+            write.close();
+        }
+        catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
     }
 
 }
