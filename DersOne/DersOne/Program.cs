@@ -13,11 +13,13 @@ namespace DersOne
     {
         static void Main(string[] args)
         {
+            Matematik hesap = new Matematik();
+
             //sirala();
             //Disk();
-            Matematik hesap = new Matematik();
-            hesap.faktoriyel(5);
-            hesap.asal(7);
+            // hesap.faktoriyel(5);
+            //hesap.asal(7);
+           // Muko();
 
         }
         static void Disk()
@@ -67,10 +69,10 @@ namespace DersOne
             int EKS = 0;
             for (int i = 0; i < 10; i++)
             {
-                Console.Write((i+1).ToString()  + ".Sayıyı giriniz: ");
+                Console.Write((i + 1).ToString() + ".Sayıyı giriniz: ");
                 sayi = Convert.ToInt32(Console.ReadLine());
 
-                if(i == 0)
+                if (i == 0)
                 {
                     EBS = sayi;
                     EKS = sayi;
@@ -86,8 +88,49 @@ namespace DersOne
             Console.WriteLine("EBS= {0} EKS{1}", EBS, EKS);
 
         }
+        public static void Muko()
+        {
+            while (true)
+            {
+                Console.Clear(); //sayfayı temizler
 
-        
+                int sayi;
+                int t = 0;
+                Console.SetCursorPosition(20, 4);
+
+                Console.Write("Sayı giriniz:");
+                sayi = Convert.ToInt32(Console.ReadLine());
+                
+
+
+                for (int i = 1; i < sayi; i++)
+                {
+                    if (sayi % i == 0)
+                    {
+                        t = t + i;
+                    }
+
+                }
+                Console.SetCursorPosition(20, 5);
+
+                if (sayi == t)
+                {
+                    Console.Write("Mükemmel sayıdır.");
+                }
+                else
+                {
+                    Console.Write("Mükemmel sayı değildir.");
+                }
+
+
+
+
+            }
+
+        }
+
+
+
 
     }
 
