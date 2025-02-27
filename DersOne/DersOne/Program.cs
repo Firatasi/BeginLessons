@@ -1,9 +1,13 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
+
 
 
 
@@ -19,7 +23,8 @@ namespace DersOne
             //Disk();
             // hesap.faktoriyel(5);
             //hesap.asal(7);
-           // Muko();
+            // Muko();
+            ders3();
 
         }
         static void Disk()
@@ -130,6 +135,87 @@ namespace DersOne
         }
 
 
+        static string yol = @"C:\Users\FIRAT\Desktop\DersOne\DersOne\bin\Debug" + @"\personel.txt";//dosya açar.
+        public static void ders3() // dosyaya veri yazma görüntüleme
+        {
+            Console.Clear();
+            Console.BackgroundColor = ConsoleColor.DarkBlue;
+            Console.ForegroundColor = ConsoleColor.Black;
+            Console.Clear();
+
+            Console.SetCursorPosition(25, 6);
+            Console.Write("1 - Kayıt");
+            Console.SetCursorPosition(25, 7);
+            Console.Write("2 - Liste");
+            Console.SetCursorPosition(25, 8);
+            Console.Write("3 - Çıkış");
+            Console.SetCursorPosition(25, 10);
+
+            Console.Write("Seçiminiz: ");
+            int sec = Int16.Parse(Console.ReadLine());
+
+            switch (sec)
+            {
+                case 1:
+                    kayit();
+                    break;
+
+                case 2:
+                    liste();
+                    break;
+
+                case 3:
+                    System.Environment.Exit(1);
+                    break;
+
+
+                default:
+                    Console.WriteLine("Lütfen geçerli bir değer giriniz! ");
+                    break;
+            }
+
+            static void kayit()
+            {
+                Console.Clear();
+                string ad, soyad;
+                byte yas;
+                
+                StreamWriter dosya = File.AppendText(yol);
+                
+                Console.SetCursorPosition(25,6);
+                Console.Write("İsminizi giriniz: ");
+                ad = Console.ReadLine();
+
+                Console.SetCursorPosition(25, 7);
+                Console.Write("Soyadınızı giriniz: ");
+                soyad = Console.ReadLine();
+
+                Console.SetCursorPosition(25, 8);
+                Console.Write("Yaşınızı giriniz: ");
+                yas = Convert.ToByte(Console.ReadLine());
+
+
+
+                dosya.Write(ad+ "-" + soyad + "-" + yas);
+                ders3();
+            }
+
+            static void liste()
+            {
+                int satir = 4;
+                Console.Clear();
+                StreamReader dosya = File.OpenText(yol); //Dosyayı açar ve okur
+                string oku = dosya.ReadLine();
+                while(oku != null)
+                {
+                    Console.SetCursorPosition(20, satir++);
+
+                    Console.Write(oku); // bütün verileri okur
+                    oku = dosya.ReadLine();
+                }
+            }
+
+        }
 
 
     }
