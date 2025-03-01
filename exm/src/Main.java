@@ -92,35 +92,5 @@ public class Main {
         }
     }
 
-    Car o1 = new Car("a", "b");
-    public static void tipDonusum() {
-        int myInt = 3;
-        double myDouble = myInt; // Otomatik Dönüştürme : int => double
-
-        System.out.println(myInt);      // Çıktısı 3
-        System.out.println(myDouble);   // Çıktısı 3.0
-
-        double a = 3.78;
-        int b = (int) myDouble; // Manuel Dönüştürme : double => int
-
-        System.out.println(myDouble);   // Çıktısı 3.78
-        System.out.println(myInt);      // Çıktısı 3
-
-        int num = 10;
-        System.out.println("Integer değer : " + num);
-
-        String data = String.valueOf(num);
-        System.out.println("String Değer : " + data);
-
-        String d = "15";
-        System.out.println("String Değer : " + data);
-
-        int f = Integer.parseInt(data);
-        System.out.println("Integer Değer : " + num);
-    }
-
-    //tipDonusum();
-
-
 }
 
